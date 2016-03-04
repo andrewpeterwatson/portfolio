@@ -3,9 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="vendors/styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <script type="text/javascript" src="script/app.js"></script>
+    <header>
+      <section id="logo"></section>
+
+      <!-- TODO:navBlock is used to maintain fixed positioning and to reveal on hover-->
+      <section id="navBlock">
+        <nav></nav>
+      </section>
+    </header>
+    <!-- TODO: Three windows that you scroll down to view project descirption, code sample, and link pic-->
+    <main>
+      <!--pic and description over the top-->
+      <section id="main"></section>
+      <!--code sample-->
+      <section id="middle"></section>
+      <!--pic that is a link to page-->
+      <section id="bottom"></section>
+    </main>
+    <footer>footer</footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="scripts/pages.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
   </body>
 </html>
