@@ -14,3 +14,11 @@ body {
   background-image: url("../media/images/portfolioBG.jpeg");
   background-size: 100%;
 }
+article header h1 {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: .2em;
+}
+ body header h1 {
+   font-family: 'Advent Pro', sans-serif;
+   font-size: 5em;
+ }
