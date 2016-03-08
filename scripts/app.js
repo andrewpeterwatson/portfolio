@@ -1,20 +1,23 @@
-var projects = [];
- function Project(opts){
-   // TODO: Place main function here
- }
+var myProjs = [];
 
- Project.prototype.toHtml = function () {
-   // TODO: Put functions together here
- };
+function Project(articleObj) {
+  this.name = articleObj.name;
+  this.pubdate = articleObj.pubdate;
+  this.body = articleObj.body;
+}
+Project.prototype.toHtml = function() {
+  var $newProject = $('article.template').clone();
+  $newProject.find('.article-title').text(this.name);
+  $newProject.find('time[pubdate]').attr('datetime', this.pubdate);
+  $newProject.find('.article-body').html(this.body);
+  $newProject.removeClass('template');
+  return $newProject;
+};
 
+projects.forEach(function(obj) {
+  myProjs.push(new Project(obj));
+});
 
-//sloops through projects to set up new projects
- pages.forEach(function (projData){
-   projects.push(new Project(projData));
- });
-
-
-//places new projects in html
- projects.forEach(function(project){
-   $('projects').append(project.toHtml());
- });
+myProjs.forEach(function(a) {
+  $('#articles').append(a.toHtml());
+});
