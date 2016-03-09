@@ -8,6 +8,7 @@ template {
 }
 body {
   background-image: url("../media/images/portfolioBG.jpeg");
+  position: fixed;
   background-size: 100%;
 }
 article header h1 {
@@ -18,4 +19,10 @@ article header h1 {
  }
  p {
    font-size: .5em;
+ }
+ #articles {
+   display: inline-block;
+ }
+ nav li {
+   list-style: none;
  }
