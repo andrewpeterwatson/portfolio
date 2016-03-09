@@ -3,12 +3,30 @@ h1 {
   font-size: 4em;
   font-family: 'Advent Pro', sans-serif;
 }
+#headerTop {
+  height: 100%;
+  width: 100%;
+  /*position: absolute;*/
+}
+#headBGImg {
+  height: 100%;
+  width: 100%;
+  /*position: inherit;*/
+}
+.headerH1 {
+  /*position: inherit;*/
+}
+main {
+  /*position: absolute;*/
+}
+/*.theBox {
+  display: inline-block;
+}*/
 template {
   display: none;
 }
 body {
-  background-image: url("../media/images/portfolioBG.jpeg");
-  position: fixed;
+  /*background-image: url("../media/images/portfolioBG.jpeg");*/
   background-size: 100%;
 }
 article header h1 {
@@ -21,7 +39,7 @@ article header h1 {
    font-size: .5em;
  }
  #articles {
-   display: inline-block;
+   list-style-image: url("../media/icons/lanternIcon.png");
  }
  nav li {
    list-style: none;
