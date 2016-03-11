@@ -3,6 +3,9 @@ h1 {
   font-size: 4em;
   font-family: 'Advent Pro', sans-serif;
 }
+.navButtons {
+  position: fixed;
+}
 #headerTop {
   height: 100%;
   width: 100%;
