@@ -2,22 +2,37 @@ var myProjs = [];
 
 function Project(articleObj) {
   this.name = articleObj.name;
-  // this.pubdate = articleObj.pubdate;
   this.body = articleObj.body;
   this.image = articleObj.image;
 }
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-  $newProject.find('.article-title').text(this.name);
-  $newProject.find('.article-body').html(this.body);
-  $newProject.find('.article-src').attr('src', this.image);
+  var templateSrc = $("#article-template").text();
+  var template = Handlebars.compile(templateSrc);
+  return template(this);
   $newProject.removeClass('template');
-  return $newProject;
 };
-
-// $(".about").on("click", function() {
-//   $(".theBox").hide();
-//   $("#about").removeAttr("hidden");
+$(".about").on("click", function(e) {
+  e.preventDefault();
+  $("header").attr("hidden", true);
+  $(".project").attr("hidden", true);
+  $("#about").removeAttr("hidden", true);
+});
+$(".home").on("click", function(e){
+  e.preventDefault();
+  $("#about").attr("hidden", true);
+  $(".project").attr("hidden", true);
+  $("header").removeAttr("hidden", true);
+})
+$(".projects").on("click", function(e){
+  e.preventDefault();
+  $("#about").attr("hidden", true);
+  $("header").attr("hidden", true);
+  $(".project").removeAttr("hidden", true);
+  $(".article-body").attr("hidden", true);
+})
+// $(".imgSrc").on("click", function(e){
+//   e.preventDefault();
+//   $(".article-body").removeAttr("hidden");
 // })
 
 projects.forEach(function(obj) {
