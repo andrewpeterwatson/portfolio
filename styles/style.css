@@ -9,7 +9,7 @@ h1 {
 }
 #navEl {
 }
-#headerTop {
+.theBox {
   height: 50em;
   width: 100%;
   border: 1px dashed red;
@@ -20,6 +20,7 @@ h1 {
 }
 .headerH1 {
   font-size: 6em;
+  margin-top: 18%;
 }
 
 
@@ -46,7 +47,7 @@ article header h1 {
 
 
  body{
-  background-color:#e8e8e7;
+  background-color:white;
 }
 
 p{

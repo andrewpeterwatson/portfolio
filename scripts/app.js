@@ -15,6 +15,11 @@ Project.prototype.toHtml = function() {
   return $newProject;
 };
 
+// $(".about").on("click", function() {
+//   $(".theBox").hide();
+//   $("#about").removeAttr("hidden");
+// })
+
 projects.forEach(function(obj) {
   myProjs.push(new Project(obj));
 });
