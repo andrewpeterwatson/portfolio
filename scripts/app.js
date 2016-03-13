@@ -30,10 +30,10 @@ $(".projects").on("click", function(e){
   $(".project").removeAttr("hidden", true);
   $(".article-body").attr("hidden", true);
 })
-// $(".imgSrc").on("click", function(e){
-//   e.preventDefault();
-//   $(".article-body").removeAttr("hidden");
-// })
+$(".imgSrc").on("click", function(e){
+  e.preventDefault();
+  $(".article-body").removeAttr("hidden");
+})
 
 projects.forEach(function(obj) {
   myProjs.push(new Project(obj));

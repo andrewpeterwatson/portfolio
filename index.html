@@ -12,7 +12,7 @@
     <script id="article-template" type="text/x-handlebars-template">
           <article class="project" data-category="{{category}}" data-author="{{author}}" hidden>
               <section class="tab-content" id="articles">
-              <article class="three columns offset-by-two">
+              <article class="artContent three columns offset-by-two">
                   <h1 class="article-title">{{name}}</h1>
                   <section class="article-image">
                     <a href="#" class="imgSrc"><img class="article-src" src="{{image}}" alt="not available"/></a>
@@ -23,22 +23,22 @@
           </article>
         </script>
   </head>
-  <body>
+  <body class="container">
     <header class="theBox" id="headerTop">
       <h1 class="headerH1">Andrew Watson</h1>
     </header>
     <nav class="navEl">
       <ul class="nav navUl">
-        <li data-content="articles" class="button four columns navButtons home"><a href="#">Home</a></li>
-        <li data-content="about" class="button four columns navButtons about"><a href="#about">About</a></li>
-        <li data-content="about" class="button four columns navButtons projects"><a href="#about">Projects</a></li>
+        <li data-content="articles" class="button two columns navButtons home"><a href="#">Home</a></li>
+        <li data-content="about" class="button two columns navButtons about"><a href="#about">About</a></li>
+        <li data-content="about" class="button two columns navButtons projects"><a href="#about">Projects</a></li>
       </ul>
     </nav>
     <main class="theBox">
       <section class="tab-content" id="articles">
 
     </section>
-    <section class="tab-content four columns offset-by-four" id="about" hidden>
+    <section class="aboutContent tab-content four columns offset-by-four" id="about" hidden>
       <h1>Sample Text</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

@@ -10,7 +10,13 @@ h1 {
 
 .navEl {
   position: fixed;
-  margin-left: 32%;
+  margin-left: 26%;
+}
+.artContent {
+  margin-top: 10%;
+}
+.aboutContent{
+  margin-top: 10%;
 }
 .navUl {
 list-style-type: none;
@@ -18,8 +24,11 @@ list-style-type: none;
 nav ul li a {
 text-decoration: none;
 color: black;
-text-align: center;
-margin-right: 105%
+/*text-align: center;*/
+margin-right: 105%;
+}
+.button {
+  border: 0px;
 }
 .theBox {
   height: 100%;
