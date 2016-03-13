@@ -10,24 +10,36 @@
     <link href='https://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header class="theBox" id="headerTop">
-      <img id="headBGImg" src="media/images/portfolioBG.jpeg" alt="Happiness" />
-      <h1 class="four columns offset-by-four headerH1">Andrew Watson</h1>
+    <header class="ten columns offset-by-one theBox" id="headerTop">
+      <h1 class="headerH1">Andrew Watson</h1>
+      <nav>
+        <ul class="tab nav" id="nevEl">
+          <li data-content="articles" class="navButtons"></i><a href="#"> Home</a></li>
+          <li data-content="about" class="navButtons"></i><a href="#"> About Me</a></li>
+        </ul>
+      </nav>
+      <section id="wrapper">
+        <section id="container">
+          <a href="#" data-content="articles" class="navButtons">home
+          </a>
+          <a href="#" data-content="about" class="navbuttons">about
+          </a>
+          <a href="#" id="button">projects
+          </a>
+        </section>
+      </section>
+
+
+
     </header>
-    <nav>
-      <ul class="tab four columns offset-by-seven nav" id="nevEl">
-        <li data-content="articles" class="navButtons"></i><a href="#"> Home</a></li>
-        <li data-content="about" class="navButtons"></i><a href="#"> About Me</a></li>
-      </ul>
-    </nav>
     <main class="theBox">
       <section class="tab-content" id="articles">
-      <article class="template">
-        <header>
-          <h1 class='article-title four columns offset-by-four'><h1>
-          <time pubdate datetime="2016-02-02"></time>
-        <header>
-        <section class="article-body four columns offset-by-four">
+      <article class="template four columns offset-by-four">
+          <h1 class="article-title"></h1>
+          <section class="article-image">
+            <img class="article-src" src="" alt="not available" />
+          </section>
+        <section class="article-body">
         </section>
       </article>
     </section>
