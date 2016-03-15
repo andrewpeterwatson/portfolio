@@ -1,0 +1,14 @@
+.theBox {
+  height: 100%;
+  width: 100%;
+}
+.navEl {
+  position: fixed;
+  margin-left: 26%;
+}
+.artContent {
+  margin-top: 10%;
+}
+.aboutContent{
+  margin-top: 10%;
+}
