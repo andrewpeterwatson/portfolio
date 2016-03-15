@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="styles/theme.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
     <script id="article-template" type="text/x-handlebars-template">
-          <article class="project" data-category="{{category}}" data-author="{{author}}" hidden>
-              <section class="tab-content" id="articles">
+          <article  class="project" data-category="{{category}}" data-author="{{author}}">
               <article class="artContent three columns offset-by-two">
                   <h1 class="article-title">{{name}}</h1>
                   <section class="article-image">
@@ -22,26 +21,25 @@
                   </section>
                 <section class="article-body">{{body}}</section>
               </article>
-            </section>
           </article>
         </script>
   </head>
   <body class="container">
-    <header class="theBox" id="headerTop">
+    <header class="theBox tab-content" id="home">
       <h1 class="headerH1">Andrew Watson</h1>
     </header>
     <nav class="navEl">
       <ul class="nav navUl">
-        <li data-content="articles" class="button two columns navButtons home"><a href="#">Home</a></li>
+        <li data-content="home" class="button two columns navButtons home"><a href="#">Home</a></li>
         <li data-content="about" class="button two columns navButtons about"><a href="#about">About</a></li>
-        <li data-content="about" class="button two columns navButtons projects"><a href="#about">Projects</a></li>
+        <li data-content="projects" class="button two columns navButtons projects"><a href="#about">Projects</a></li>
       </ul>
     </nav>
     <main class="theBox">
-      <section class="tab-content" id="articles">
+      <section class="tab-content" id="projects">
 
     </section>
-    <section class="aboutContent tab-content four columns offset-by-four" id="about" hidden>
+    <section class="aboutContent tab-content four columns offset-by-four" id="about">
       <h1>Sample Text</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -55,6 +53,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script src="http://code.jquery.com/jquery-2.2.1.js" charset="utf-8"></script>
     <script src="scripts/pages.js" charset="utf-8"></script>
+    <script src="scripts/pageData.js" charset="utf-8"></script>
     <script src="scripts/app.js" charset="utf-8"></script>
   </body>
 </html>
