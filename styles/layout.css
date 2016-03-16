@@ -3,8 +3,11 @@
   width: 100%;
 }
 .navEl {
-  position: fixed;
-  margin-left: 26%;
+  /*position: fixed;*/
+  /*margin-left: 26%;*/
+}
+.navButtons {
+  display: block;
 }
 .artContent {
   margin-top: 10%;
