@@ -1,3 +1,7 @@
+.navEl {
+  position: fixed;
+  margin-left: 23%;
+}
 .navUl {
 list-style-type: none;
 }
@@ -7,4 +11,13 @@ list-style-type: none;
 }
 nav li {
   display: inline;
+}
+.home {
+  color: #77be1b;
+}
+.about {
+  color: #ffa206;
+}
+.projects {
+ color: #cd0f0e;
 }

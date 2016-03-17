@@ -1,11 +1,16 @@
 .headerH1 {
   font-size: 6em;
   margin-top: 18%;
+  color: white;
 }
 .projContent {
   display: inline-block;
 }
 #footerText {
   font-size: 1em;
-  margin-top: 88%;
+  margin-top: 125%;
+}
+.article-src {
+  border-radius: 100px;
+  margin-left: 30%;
 }
