@@ -5,3 +5,7 @@
 .projContent {
   display: inline-block;
 }
+#footerText {
+  font-size: 1em;
+  margin-top: 88%;
+}

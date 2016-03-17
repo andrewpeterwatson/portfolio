@@ -26,17 +26,17 @@
   </head>
   <body class="container">
     <header class="theBox tab-content" id="home">
+      <nav class="navEl">
+        <ul class="nav navUl">
+          <li data-content="home" class="button offset-by-three navButtons home"><a href="#">Home</a></li>
+          <li class= "offset-by-three">|</li>
+          <li data-content="about" class="button offset-by-three navButtons about"><a href="#about">About</a></li>
+          <li class= "offset-by-three">|</li>
+          <li data-content="projects" class="button offset-by-three navButtons projects"><a href="#about">Projects</a></li>
+        </ul>
+      </nav>
       <h1 class="headerH1">Andrew Watson</h1>
     </header>
-    <nav class="navEl">
-      <ul class="nav navUl">
-        <li data-content="home" class="button two columns navButtons home"><a href="#">Home</a></li>
-        <li class="navButtons">|</li>
-        <li data-content="about" class="button two columns navButtons about"><a href="#about">About</a></li>
-        <li class="navButtons">|</li>
-        <li data-content="projects" class="button two columns navButtons projects"><a href="#about">Projects</a></li>
-      </ul>
-    </nav>
     <main class="theBox">
       <section class="tab-content" id="projects">
 
@@ -48,9 +48,10 @@
       </p>
     </section>
     </main>
-    <footer class="four columns offset-by-four" hidden>
-      <img src="media/images/iitsMe.jpg" alt="" />
-      <a href="https://github.com/andrewpeterwatson">My Github</a>
+    <footer class="four columns offset-by-four" >
+      <p id="footerText">&copy | Andrew Watson | 2016</p>
+      <!-- <img src="media/images/iitsMe.jpg" alt="" />
+      <a href="https://github.com/andrewpeterwatson">My Github</a> -->
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script src="http://code.jquery.com/jquery-2.2.1.js" charset="utf-8"></script>

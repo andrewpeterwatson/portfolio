@@ -5,3 +5,6 @@ list-style-type: none;
 .button {
   border: 0px;
 }
+nav li {
+  display: inline;
+}
