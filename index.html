@@ -14,7 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
     <script id="article-template" type="text/x-handlebars-template">
           <article  class="project" data-category="{{category}}" data-author="{{author}}">
-              <article class="artContent three columns offset-by-two">
+              <article class="artContent six columns ">
                   <h1 class="article-title">{{name}}</h1>
                   <section class="article-image">
                     <a href="#" class="imgSrc"><img class="article-src" src="{{image}}" alt="not available"/></a>
@@ -28,14 +28,16 @@
     <header class="theBox tab-content" id="home">
       <h1 class="headerH1">Andrew Watson</h1>
     </header>
-    <nav class="navEl">
-      <ul class="nav navUl">
-        <li data-content="home" class="button two columns navButtons home"><a href="#">Home</a></li>
-        <li data-content="about" class="button two columns navButtons about"><a href="#about">About</a></li>
-        <li data-content="projects" class="button two columns navButtons projects"><a href="#about">Projects</a></li>
-      </ul>
-    </nav>
     <main class="theBox">
+      <nav class="navEl">
+        <ul class="navUl">
+          <li data-content="home" class="button offset-by-three navButtons home"><a class="home" href="#">Home</a></li>
+          <li class= "offset-by-three">|</li>
+          <li data-content="about" class="button offset-by-three navButtons about"><a class="about" href="#about">About</a></li>
+          <li class= "offset-by-three">|</li>
+          <li data-content="projects" class="button offset-by-three navButtons projects"><a class="projects" href="#about">Projects</a></li>
+        </ul>
+      </nav>
       <section class="tab-content" id="projects">
 
     </section>
@@ -46,9 +48,10 @@
       </p>
     </section>
     </main>
-    <footer class="four columns offset-by-four" hidden>
-      <img src="media/images/iitsMe.jpg" alt="" />
-      <a href="https://github.com/andrewpeterwatson">My Github</a>
+    <footer class="four columns offset-by-four" >
+      <p id="footerText">&copy | Andrew Watson | 2016</p>
+      <!-- <img src="media/images/iitsMe.jpg" alt="" />
+      <a href="https://github.com/andrewpeterwatson">My Github</a> -->
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script src="http://code.jquery.com/jquery-2.2.1.js" charset="utf-8"></script>

@@ -1,7 +1,23 @@
+.navEl {
+  position: fixed;
+  margin-left: 23%;
+}
 .navUl {
 list-style-type: none;
 }
 
 .button {
   border: 0px;
+}
+nav li {
+  display: inline;
+}
+.home {
+  color: #77be1b;
+}
+.about {
+  color: #ffa206;
+}
+.projects {
+ color: #cd0f0e;
 }
