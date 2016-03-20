@@ -14,10 +14,21 @@ nav li {
 }
 .home {
   color: #77be1b;
+  /*font-size: 1.5em;*/
+  /*-webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  border: 1px dashed red;
+  width: 15em;
+  height: 2em;*/
 }
 .about {
   color: #ffa206;
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
 }
 .projects {
+  /* TODO: make drop down menu for more types of "work" */
  color: #cd0f0e;
+ -webkit-transform: rotate(-40deg);
+ transform: rotate(-40deg);
 }
