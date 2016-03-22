@@ -20,3 +20,9 @@ $(".article-image").on("click", "a", function(){
   $sectionEl.next().fadeToggle(500);
 });
 }
+
+articleView.inItIndexPage = function() {
+  Project.all.forEach(function(a) {
+    $('#projects').append(a.toHtml());
+  })
+}
