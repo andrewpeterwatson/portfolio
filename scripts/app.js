@@ -20,7 +20,6 @@ Project.loadAll = function(rawData) {
 }
 Project.fetchAll = function(callBack) {
   if (localStorage.rawData) {
-    console.log("In Local");
     Project.loadAll(JSON.parse(localStorage.rawData));
     callBack();
   } else {
@@ -28,7 +27,6 @@ Project.fetchAll = function(callBack) {
       url: "../scripts/pages.json",
       method: "GET"
     }) .done(function(data, message, xhr) {
-       console.log("not in local");
         localStorage.setItem('rawData', JSON.stringify(data));
         Project.loadAll(data);
         callBack();

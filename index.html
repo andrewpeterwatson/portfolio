@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/theme.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
     <script id="article-template" type="text/x-handlebars-template">
-          <article  class="project" data-category="{{category}}" data-author="{{author}}">
+          <article  class="ux" data-category="{{category}}" data-author="{{author}}">
               <article class="artContent six columns ">
                   <h1 class="article-title">{{name}}</h1>
                   <section class="article-image">
@@ -35,18 +35,18 @@
           <li class= "offset-by-three">|</li>
           <li data-content="about" class="button offset-by-three navButtons about"><a class="about" href="#about">About</a></li>
           <li class= "offset-by-three">|</li>
-          <li data-content="projects" class="button offset-by-three navButtons projects"><a class="projects" href="#about">Projects</a>
+          <li class="button offset-by-three navButtons"><a class="projects">Projects</a>
           </li>
         </ul>
         <ul class="projectsMenu">
-          <li class="pMEl">UX Design</li>
+          <li data-content="ux" class="button offset-by-three navButtons ux pMEL"><a class="ux" href="#about">UX Design</a>
           <li class="pMEl" id="animation">Animation</li>
         </ul>
       </nav>
         <img src="media/images/headShot.png" alt="WRONG!" />
     </header>
     <main class="theBox">
-      <section class="tab-content" id="projects">
+      <section class="tab-content" id="ux">
 
     </section>
     <section class="aboutContent tab-content four columns offset-by-four" id="about">
