@@ -1,7 +1,6 @@
 .navEl {
   position: fixed;
   margin-left: 23%;
-  width: 50%
 }
 .navUl {
 list-style-type: none;
@@ -35,12 +34,7 @@ nav li {
 }
 .projectsMenu {
   display: inline-block;
-  margin-left: 45%;
-  margin-top: -6%;
 }
 .pMEl {
   display: block;
-}
-#animation {
-  margin-left: 45%;
 }
