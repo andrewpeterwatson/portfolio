@@ -23,3 +23,26 @@ nav ul li a {
 text-decoration: none;
 color: white;
 }
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+  nav ul {
+	padding: 0 20px;
+	border-radius: 10px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+  margin-left: 30%;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+  nav ul li {
+	float: left;
+  width: 5em;
+}
