@@ -28,21 +28,57 @@
   </head>
   <body class="container">
     <header class="theBox tab-content" id="home">
-      <h1 class="headerH1">Andrew Watson</h1>
-      <nav class="navEl">
-        <ul class="navUl">
-          <li data-content="home" class="button offset-by-three navButtons home"><a class="home" href="#">Home</a></li>
-          <li class= "offset-by-three">|</li>
-          <li data-content="about" class="button offset-by-three navButtons about"><a class="about" href="#about">About</a></li>
-          <li class= "offset-by-three">|</li>
-          <li class="button projects offset-by-three navButtons">Projects
+
+      <section id="dynamicTextBox">
+        <section id="staticText">This is a
+          <section class="dynamicText"></section>
+        </section>
+      </section>
+
+      <!-- <h1 class="headerH1">Andrew Watson</h1> -->
+
+
+        <nav>
+          <ul>
+            <li data-content="home"><a href="#">Home</a></li>
+            <li>|</li>
+            <li data-content="home"><a href="#">About</a></li>
+            <li>|</li>
+            <li data-content="home"><a href="#">Projects</a>
+              <ul>
+                <li><a href="#">UX Design</a></li>
+                <li><a href="#">Animation</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+
+
+
+
+
+      <!-- <nav class="navEl">
+      <ul class="navUl">
+      <li data-content="home" class="button offset-by-three navButtons home"><a class="home" href="#">Home</a></li>
+      <li class= "offset-by-three">|</li>
+      <li data-content="about" class="button offset-by-three navButtons about"><a class="about" href="#about">About</a></li>
+      <li class= "offset-by-three">|</li>
+      <li class="button projects offset-by-three navButtons"><a class="projects" href="#">Projects</a>
+      <ul>
+      <li><a href="#">UX Design</a></li>
+      <li><a href="#">Animation</a></li>
+    </ul> -->
+            <!-- Old buttons -->
+            <!-- <ul class="projectsMenu">
+              <li data-content="ux" class="button offset-by-three navButtons ux pMEL"><a class="ux" href="#">UX Design</a>
+              <li class="button offset-by-three navButtons ux pMEL" id="animation"><a href="#"></a>Animation</a></li>
+            </ul> -->
+            <!--
           </li>
         </ul>
-        <ul class="projectsMenu">
-          <li data-content="ux" class="button offset-by-three navButtons ux pMEL"><a class="ux" href="#about">UX Design</a>
-          <li class="pMEl" id="animation">Animation</li>
-        </ul>
-      </nav>
+      </nav> -->
+
         <img src="media/images/headShot.png" alt="WRONG!" />
     </header>
     <main class="theBox">
