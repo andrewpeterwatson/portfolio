@@ -45,36 +45,36 @@ $('.dynamicText').text("Time");
       $('.dynamicText').text(usedText);
     if (counter < 6) {
       usedText.pop();
-      createLoop(time);...
+      createLoop(time);
     } else {
       counter = 0,
       usedText = [];
       $('.dynamicText').text("Time");
-      createLoop(time);
+      createLoop(time);...
     }
   },time)
 }
 createLoop(3000);
 
-// var txtEl = $('.dynamicText'),
-//     txt = txtEl.text(),
-//     txtLen = txt.length,
-//     timeOut,
-//     char = 0;
-//
-// txtEl.text("|");
-//
-// (function typeIt() {
-//   var typeSpeed = Math.round(Math.random() * (400 - 30)) + 30;
-//   timeOut = setTimeout(function() {
-//     char++;
-//     var type = txt.substring(0, char);
-//     txtEl.text(type + '|');
-//     typeIt();
-//
-//     if (char === txtLen) {
-//       txtEl.text(txtEl.text().slice(0, -1));
-//       clearTimeout(timeOut);
-//     }
-//   }, typeSpeed);
-// }());
+var txtEl = $('.dynamicText'),
+    txt = txtEl.text(),
+    txtLen = txt.length,
+    timeOut,
+    char = 0;
+
+txtEl.text("|");
+
+(function typeIt() {
+  var typeSpeed = Math.round(Math.random() * (400 - 30)) + 30;
+  timeOut = setTimeout(function() {
+    char++;
+    var type = txt.substring(0, char);
+    txtEl.text(type + '|');
+    typeIt();
+
+    if (char === txtLen) {
+      txtEl.text(txtEl.text().slice(0, -1));
+      clearTimeout(timeOut);
+    }
+  }, typeSpeed);
+}());
