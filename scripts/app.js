@@ -1,3 +1,5 @@
+(function(module) {
+
 var myProjs = [];
 
 function Project(articleObj) {
@@ -50,7 +52,7 @@ $('.dynamicText').text("Time");
       counter = 0,
       usedText = [];
       $('.dynamicText').text("Time");
-      createLoop(time);...
+      createLoop(time);
     }
   },time)
 }
@@ -78,3 +80,8 @@ txtEl.text("|");
     }
   }, typeSpeed);
 }());
+
+
+module.Project = Project;
+
+})(window);

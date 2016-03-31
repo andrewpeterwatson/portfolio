@@ -23,6 +23,6 @@ $(".article-image").on("click", "a", function(){
 
 articleView.inItIndexPage = function() {
   Project.all.forEach(function(a) {
-    $('#ux').append(a.toHtml());
+    $('#projects').append(a.toHtml());
   })
 }
