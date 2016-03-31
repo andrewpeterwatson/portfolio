@@ -34,22 +34,27 @@ Project.fetchAll = function(callBack) {
     }
 }
 
-var fillText = ["test1","test2","test3","test4","test5"];
+var fillText = ["test1","nest","monkey","test4","cards"];
 var usedText = [];
-// TODO: DO IT THIS WAY!!!!!!!!
-  fillText.forEach()
-
-
-fillText.reduce(function(a,b) {
-  console.log(b);
-  usedText.push(b);
-  console.log(usedText);
-  return b;
-},[-1])
-  $('.dynamicText').text(usedText);
-
-
-
+var counter = 0;
+$('.dynamicText').text("Time");
+  function createLoop(time) {
+    setTimeout(function () {
+      usedText.push(fillText[counter])
+      counter++
+      $('.dynamicText').text(usedText);
+    if (counter < 6) {
+      usedText.pop();
+      createLoop(time);
+    } else {
+      counter = 0,
+      usedText = [];
+      $('.dynamicText').text("Time");
+      createLoop(time);...
+    }
+  },time)
+}
+createLoop(3000);
 
 var txtEl = $('.dynamicText'),
     txt = txtEl.text(),
