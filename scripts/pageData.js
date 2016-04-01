@@ -1,4 +1,4 @@
-
+(function(module) {
 var articleView = {};
 
 articleView.mainNav = function() {
@@ -23,6 +23,9 @@ $(".article-image").on("click", "a", function(){
 
 articleView.inItIndexPage = function() {
   Project.all.forEach(function(a) {
-    $('#ux').append(a.toHtml());
+    $('#projects').append(a.toHtml());
   })
 }
+
+module.articleView = articleView
+})(window);
