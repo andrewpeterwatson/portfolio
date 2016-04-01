@@ -1,4 +1,4 @@
-
+(function(module) {
 var articleView = {};
 
 articleView.mainNav = function() {
@@ -26,3 +26,6 @@ articleView.inItIndexPage = function() {
     $('#projects').append(a.toHtml());
   })
 }
+
+module.articleView = articleView
+})(window);

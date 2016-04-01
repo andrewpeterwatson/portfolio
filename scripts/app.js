@@ -36,50 +36,56 @@ Project.fetchAll = function(callBack) {
     }
 }
 
+var fillImg = [
+"/media/icons/aboutIcon.png"
+,"/media/icons/HamburgerIcon.png"
+,"/media/icons/lanternIcon.png"
+]
 var fillText = ["test1","nest","monkey","test4","cards"];
 var usedText = [];
 var counter = 0;
-$('.dynamicText').text("Time");
-  function createLoop(time) {
-    setTimeout(function () {
-      usedText.push(fillText[counter])
+// $('.dynamicText').text("Time");
+
+function createLoop(time, renderLocate, fillData, dataArr) {
+  setTimeout(function () {
+      fillData.push(dataArr[counter])
+      $(renderLocate).attr("src", fillData);
       counter++
-      $('.dynamicText').text(usedText);
-    if (counter < 6) {
-      usedText.pop();
-      createLoop(time);
+    if (counter < dataArr.length + 1) {
+      fillData.pop();
+      createLoop(time, renderLocate, fillData, dataArr);...
     } else {
       counter = 0,
       usedText = [];
-      $('.dynamicText').text("Time");
-      createLoop(time);
+      $(renderLocate).attr("src", fillData);
+      createLoop(time, renderLocate, fillData, dataArr);
     }
   },time)
 }
-createLoop(3000);
+createLoop(1000,'#imgTest', usedText, fillImg);
 
-var txtEl = $('.dynamicText'),
-    txt = txtEl.text(),
-    txtLen = txt.length,
-    timeOut,
-    char = 0;
-
-txtEl.text("|");
-
-(function typeIt() {
-  var typeSpeed = Math.round(Math.random() * (400 - 30)) + 30;
-  timeOut = setTimeout(function() {
-    char++;
-    var type = txt.substring(0, char);
-    txtEl.text(type + '|');
-    typeIt();
-
-    if (char === txtLen) {
-      txtEl.text(txtEl.text().slice(0, -1));
-      clearTimeout(timeOut);
-    }
-  }, typeSpeed);
-}());
+// var txtEl = $('.dynamicText'),
+//     txt = txtEl.text(),
+//     txtLen = txt.length,
+//     timeOut,
+//     char = 0;
+//
+// txtEl.text("|");
+//
+// (function typeIt() {
+//   var typeSpeed = Math.round(Math.random() * (400 - 30)) + 30;
+//   timeOut = setTimeout(function() {
+//     char++;
+//     var type = txt.substring(0, char);
+//     txtEl.text(type + '|');
+//     typeIt();
+//
+//     if (char === txtLen) {
+//       txtEl.text(txtEl.text().slice(0, -1));
+//       clearTimeout(timeOut);
+//     }
+//   }, typeSpeed);
+// }());
 
 
 module.Project = Project;
