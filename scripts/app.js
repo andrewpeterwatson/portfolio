@@ -49,11 +49,11 @@ var counter = 0;
 function createLoop(time, renderLocate, fillData, dataArr) {
   setTimeout(function () {
       fillData.push(dataArr[counter])
-      $(renderLocate).attr("src", fillData);
+      $(renderLocate).attr("src", fillData);...
       counter++
     if (counter < dataArr.length + 1) {
       fillData.pop();
-      createLoop(time, renderLocate, fillData, dataArr);...
+      createLoop(time, renderLocate, fillData, dataArr);
     } else {
       counter = 0,
       usedText = [];
@@ -88,6 +88,6 @@ createLoop(1000,'#imgTest', usedText, fillImg);
 // }());
 
 
-module.Project = Project;
 
+module.Project = Project;
 })(window);
