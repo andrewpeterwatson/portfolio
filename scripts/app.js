@@ -36,34 +36,38 @@ Project.fetchAll = function(callBack) {
     }
 }
 
-var fillImg = [
-"/media/icons/aboutIcon.png"
-,"/media/icons/HamburgerIcon.png"
-,"/media/icons/lanternIcon.png"
-]
-var fillText = ["test1","nest","monkey","test4","cards"];
-var usedText = [];
-var counter = 0;
-// $('.dynamicText').text("Time");
+// TODO: This is the cycle function 
+// var fillImg = [
+// "/media/icons/aboutIcon.png"
+// ,"/media/icons/HamburgerIcon.png"
+// ,"/media/icons/lanternIcon.png"
+// ]
+// var fillText = ["test1","nest","monkey","test4","cards"];
+// var usedText = [];
+// var counter = 0;
+// // $('.dynamicText').text("Time");
+//
+// function createLoop(time, renderLocate, fillData, dataArr) {
+//   setTimeout(function () {
+//       fillData.push(dataArr[counter])
+//       $(renderLocate).attr("src", fillData);
+//       counter++
+//     if (counter < dataArr.length + 1) {
+//       fillData.pop();
+//       createLoop(time, renderLocate, fillData, dataArr);
+//     } else {
+//       counter = 0,
+//       usedText = [];
+//       $(renderLocate).attr("src", fillData);
+//       createLoop(time, renderLocate, fillData, dataArr);
+//     }
+//   },time)
+// }
+// createLoop(1000,'#imgTest', usedText, fillImg);
 
-function createLoop(time, renderLocate, fillData, dataArr) {
-  setTimeout(function () {
-      fillData.push(dataArr[counter])
-      $(renderLocate).attr("src", fillData);...
-      counter++
-    if (counter < dataArr.length + 1) {
-      fillData.pop();
-      createLoop(time, renderLocate, fillData, dataArr);
-    } else {
-      counter = 0,
-      usedText = [];
-      $(renderLocate).attr("src", fillData);
-      createLoop(time, renderLocate, fillData, dataArr);
-    }
-  },time)
-}
-createLoop(1000,'#imgTest', usedText, fillImg);
 
+
+// TODO: this is the type function
 // var txtEl = $('.dynamicText'),
 //     txt = txtEl.text(),
 //     txtLen = txt.length,
@@ -86,7 +90,6 @@ createLoop(1000,'#imgTest', usedText, fillImg);
 //     }
 //   }, typeSpeed);
 // }());
-
 
 
 module.Project = Project;

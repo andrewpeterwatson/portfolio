@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/state.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="styles/theme.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
+    <script src="/vendors/scripts/page.js"></script>
     <script id="article-template" type="text/x-handlebars-template">
           <article  class="ux" data-category="{{category}}" data-author="{{author}}">
               <article class="artContent six columns ">
@@ -91,14 +92,14 @@
     <script src="scripts/pages.json" charset="utf-8"></script>
     <script src="scripts/pageData.js" charset="utf-8"></script>
 
-    <script src="/vendors/scripts/page.js"></script>
+    <!-- <script src="/vendors/scripts/page.js"></script> -->
+    <script src="scripts/projectsController.js" charset="utf-8"></script>
     <script src="scripts/aboutController.js" charset="utf-8"></script>
     <script src="scripts/routes.js" charset="utf-8"></script>
-    <script src="scripts/projectsController.js" charset="utf-8"></script>
 
 
-    <script>
-      Project.fetchAll(articleView.initIndexPage);
-    </script>
+    <!-- <script>
+      Project.fetchAll(articleView.inItIndexPage);
+    </script> -->
   </body>
 </html>

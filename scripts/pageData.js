@@ -11,15 +11,16 @@ var articleView = {};
 // };
 $(document).ready(function() {
   // articleView.mainNav();
-  articleView.bodyToggle();
+  // articleView.bodyToggle();
+  $('#about').hide();
 });
 
-articleView.bodyToggle = function() {
-$(".article-image").on("click", "a", function(){
-  var $sectionEl = $(this).parent();
-  $sectionEl.next().fadeToggle(500);
-});
-}
+// articleView.bodyToggle = function() {
+// $(".article-image").on("click", "a", function(){
+//   var $sectionEl = $(this).parent();
+//   $sectionEl.next().fadeToggle(500);
+// });
+// }
 
 articleView.inItIndexPage = function() {
   Project.all.forEach(function(a) {
