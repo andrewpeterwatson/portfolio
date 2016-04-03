@@ -36,7 +36,7 @@ Project.fetchAll = function(callBack) {
     }
 }
 
-// TODO: This is the cycle function 
+// TODO: This is the cycle function
 // var fillImg = [
 // "/media/icons/aboutIcon.png"
 // ,"/media/icons/HamburgerIcon.png"
