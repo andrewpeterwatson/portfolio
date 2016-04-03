@@ -88,6 +88,5 @@ createLoop(1000,'#imgTest', usedText, fillImg);
 // }());
 
 
-
 module.Project = Project;
 })(window);
