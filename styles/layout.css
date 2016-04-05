@@ -3,6 +3,7 @@
   width: 100%;
 }
 .artContent {
+  height: 30em;
   margin-top: 10%;
   border: 1px dashed red;
   background-color: red;
