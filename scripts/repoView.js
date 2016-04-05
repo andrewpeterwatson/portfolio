@@ -10,7 +10,7 @@
      ui();
      $('#about ul').append(
 
-       repos.with('name').map(render)
+       repos.with('description').map(render)
      );
    };
 

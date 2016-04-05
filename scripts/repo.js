@@ -1,14 +1,13 @@
  (function(module) {
    var repos = {};
- 
+
    repos.all = [];
- 
+
    repos.requestRepos = function(callback) {
-     console.log(callback);
      $.ajax({
        type: 'GET',
        url:'https://api.github.com/user/repos',
-       headers: { Authorization: 'token ' + token },
+       headers: { Authorization: 'token ' + gitToken },
        success: function(data, status, xhr){
          repos.all = data;
          callback();
@@ -18,12 +17,12 @@
        }
    });
    };
- 
+
    repos.with = function(attr) {
      return repos.all.filter(function(repo) {
        return repo[attr];
      });
    };
 
-  module.repos = repos;
- })(window);
+   module.repos = repos;
+})(window);
