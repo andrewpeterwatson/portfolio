@@ -3,7 +3,7 @@
 
   projectsController.index = function() {
     $('.tab-content').hide();
-    $('#projects').fadeIn();
+    $('#projects').fadeIn().siblings().hide();
   };
 
   projectsController.bodyHide = function() {

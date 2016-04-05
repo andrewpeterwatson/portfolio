@@ -4,7 +4,8 @@
 }
 .artContent {
   margin-top: 10%;
-  color: white;
+  border: 1px dashed red;
+  background-color: red;
 }
 .aboutContent{
   margin-top: 10%;
