@@ -1,7 +1,8 @@
 body {
-  background-size: 100%;
-  background-color: #258ed6;
-}
+  background-image: url(../media/images/paperBlue.jpg);
+  background-repeat: repeat;
+  }
+
 article header h1 {
   font-size: .2em;
   color: white;
@@ -45,4 +46,19 @@ nav ul ul {
   nav ul li {
 	float: left;
   width: 5em;
+}
+footer {
+  margin-top: -1%;
+  /*position: absolute;*/
+}
+#homeImg {
+  margin-top: 19%;
+  position: fixed;
+  margin-left: 13%;
+}
+#staticText {
+  position: absolute;
+margin-top: 9%;
+margin-left: 40%;
+font-size: 2em;
 }
