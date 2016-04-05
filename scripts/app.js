@@ -34,8 +34,27 @@ Project.fetchAll = function(callBack) {
         callBack();
       });
     }
+    Project.names();
+    Project.fillNum();
 }
+var filteredNames = [];
+Project.names = function() {
+  return Project.all.map(function(project){
+    console.log(project.name);
+    return project.name;
+  }).reduce(function(a,b) {
+      filteredNames.push(b);
+      return a + b;
+    },-1);
+  };
 
+  Project.fillNum = function() {
+    $('#projNum').html(" Currently featuring " + filteredNames.length + " projects!");
+  }
+
+
+
+// $('span').html(facts[fact] + (facts[fact] - 1));
 // TODO: This is the cycle function
 // var fillImg = [
 // "/media/icons/aboutIcon.png"
@@ -51,15 +70,17 @@ Project.fetchAll = function(callBack) {
 //   setTimeout(function () {
 //       fillData.push(dataArr[counter])
 //       $(renderLocate).attr("src", fillData);
+//       console.log(fillData);
 //       counter++
 //     if (counter < dataArr.length + 1) {
 //       fillData.pop();
 //       createLoop(time, renderLocate, fillData, dataArr);
+//       usedText = [];
 //     } else {
 //       counter = 0,
-//       usedText = [];
 //       $(renderLocate).attr("src", fillData);
 //       createLoop(time, renderLocate, fillData, dataArr);
+//       usedText = [];
 //     }
 //   },time)
 // }
@@ -91,6 +112,6 @@ Project.fetchAll = function(callBack) {
 //   }, typeSpeed);
 // }());
 
-
+module.filteredNames = filteredNames;
 module.Project = Project;
 })(window);

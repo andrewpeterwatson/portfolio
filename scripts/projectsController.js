@@ -4,7 +4,6 @@
   projectsController.index = function() {
     $('.tab-content').hide();
     $('#projects').fadeIn();
-    $('.navEl').fadeIn();
   };
 
   projectsController.bodyHide = function() {

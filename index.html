@@ -71,12 +71,11 @@
         </nav>
     </header>
     <main class="theBox">
-
       <section id="dynamicTextBox" class="theBox tab-content">
         <section id="staticText">This is a
           <img id="imgTest" src="" alt="not found" />
         </section>
-        <img src="media/images/headShot.png" alt="WRONG!" />
+        <img id="homeImg" src="media/images/headShot.png" alt="WRONG!" />
       </section>
 
       <section class="tab-content" id="projects">
@@ -89,23 +88,16 @@
       </p>
     </section>
     </main>
-    <footer class="four columns offset-by-four" >
-      <p id="footerText">&copy | Andrew Watson | 2016</p>
+    <footer class="seven columns offset-by-two" >
+      <p id="footerText">&copy | Andrew Watson | 2016 |<span id="projNum"></span></p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script src="http://code.jquery.com/jquery-2.2.1.js" charset="utf-8"></script>
     <script src="scripts/app.js" charset="utf-8"></script>
     <script src="scripts/pages.json" charset="utf-8"></script>
     <script src="scripts/pageData.js" charset="utf-8"></script>
-
-    <!-- <script src="/vendors/scripts/page.js"></script> -->
     <script src="scripts/projectsController.js" charset="utf-8"></script>
     <script src="scripts/aboutController.js" charset="utf-8"></script>
     <script src="scripts/routes.js" charset="utf-8"></script>
-
-
-    <!-- <script>
-      Project.fetchAll(articleView.inItIndexPage);
-    </script> -->
   </body>
 </html>
