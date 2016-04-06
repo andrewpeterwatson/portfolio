@@ -6,7 +6,9 @@ function Project(articleObj) {
   this.name = articleObj.name;
   this.body = articleObj.body;
   this.image = articleObj.image;
-}
+  this.backImg = articleObj.backImg;
+  console.log(this.image);
+};
 Project.prototype.toHtml = function() {
   var templateSrc = $("#article-template").text();
   var template = Handlebars.compile(templateSrc);
@@ -40,7 +42,6 @@ Project.fetchAll = function(callBack) {
 var filteredNames = [];
 Project.names = function() {
   return Project.all.map(function(project){
-    console.log(project.name);
     return project.name;
   }).reduce(function(a,b) {
       filteredNames.push(b);

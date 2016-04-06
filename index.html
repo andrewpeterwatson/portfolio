@@ -17,13 +17,15 @@
     <script src="/vendors/scripts/page.js"></script>
     <script id="article-template" type="text/x-handlebars-template">
           <article  class="projects" data-category="{{category}}" data-author="{{author}}">
-              <article class="artContent twelve columns ">
+              <article class="artContent twelve columns">
+                <section class="banner" style="background-image: url({{backImg}})"></section>
+                <section class="bannerCover"></section>
                   <h1 class="article-title">{{name}}</h1>
                   <section class="article-image">
-                    <a href="#" class="imgSrc"><img class="article-src" src="{{image}}" alt="not available"/></a>
+                    <!-- <a href="#" class="imgSrc"><img class="article-src" src="{{image}}" alt="not available"/></a> -->
                   </section>
                 <section class="article-body">{{body}}</section>
-              </article>
+            </article>
           </article>
         </script>
 
@@ -42,6 +44,7 @@
 
   </head>
   <body class="container">
+    <section id="bodyBox"></section>
     <header>
 
 

@@ -3,10 +3,31 @@
   width: 100%;
 }
 .artContent {
-  height: 30em;
+  height: 35em;
   margin-top: 10%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+}
+.banner {
+  height: 37em;
+  width: 100%;
+  margin-top: 4%;
+}
+.bannerCover {
+  height: 35em;
+  width: 100%;
   border: 1px dashed red;
-  background-color: red;
+  box-shadow: inset 0 0 200px 50px #000000;
+  background-color: hsla(15, 100%, 0%, 0.69);
+  margin-top: -43.3%;
+  position: absolute;
+}
+.article-title {
+  position: absolute;
+  margin-top: -25%;
+  margin-left: 42%;
+  color: white;
 }
 .aboutContent{
   margin-top: 10%;
