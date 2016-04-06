@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Andrew Watson</title>
+    <link rel="icon" type="image/png" href="media/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="media/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="vendors/Skeleton-2.0.4/css/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="vendors/Skeleton-2.0.4/css/skeleton.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/base.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/layout.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/module.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/state.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/theme.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
+    <script src="/vendors/scripts/page.js"></script>
+    <script id="article-template" type="text/x-handlebars-template">
+          <article  class="projects" data-category="{{category}}" data-author="{{author}}">
+              <article class="artContent twelve columns">
+                <section id="one" class="banner" style="background-image: url({{backImg}})"></section>
+                <section id="two" class="bannerCover"></section>
+                  <h1 class="article-title">{{name}}</h1>
+                  <section class="article-image">
+                    <!-- <a href="#" class="imgSrc"><img class="article-src" src="{{image}}" alt="not available"/></a> -->
+                  </section>
+                <section class="article-body">{{body}}</section>
+            </article>
+          </article>
+        </script>
+
+        <script id="repo-template" type="text/x-handlebars-template">
+        <li>
+          <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+          <p>Description: {{description}}</p>
+          <p>Language: {{language}}</p>
+          <p>Created: {{created_at}}</p>
+          <p>Last updated: {{updated_at}}</p>
+          {{#if watchers_count}}
+            <p>{{watchers_count}} watching this repo</p>
+          {{/if}}
+        </li>
+        </script>
+
+  </head>
+  <body class="container">
+    <section id="bodyBox"></section>
+    <header>
+
+
+        <!-- <nav>
+          <ul>
+            <li data-content="home"><a href="#">Home</a></li>
+            <li>|</li>
+            <li data-content="home"><a href="#">About</a></li>
+            <li>|</li>
+            <li data-content="home"><a href="#">Projects</a>
+              <ul>
+                <li><a href="#">UX Design</a></li>
+                <li><a href="#">Animation</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav> -->
+
+
+        <nav class="navEl">
+          <ul class="navUl">
+            <li data-content="home" class="button offset-by-three navButtons home"><a class="home" href="/">Home</a></li>
+            <li class= "offset-by-three">|</li>
+            <li data-content="about" class="button offset-by-three navButtons about"><a class="about" href="/about">About</a></li>
+            <li class= "offset-by-three">|</li>
+            <li data-content="projects" class="button projects offset-by-three navButtons"><a class="projects" href="/projects">Projects</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main class="theBox">
+      <section id="dynamicTextBox" class="theBox tab-content">
+        <section id="staticText">This is a
+          <img id="imgTest" src="" alt="not found" />
+        </section>
+        <img id="homeImg" src="media/images/headShot.png" alt="WRONG!" />
+      </section>
+
+      <section class="tab-content" id="projects">
+
+    </section>
+    <section class="aboutContent tab-content four columns offset-by-four" id="about">
+      <h1>Sample Text</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <ul>
+        <li>My codes thus far</li>
+      </ul>
+    </section>
+    </main>
+    <footer class="seven columns offset-by-two" >
+      <p id="footerText">&copy | Andrew Watson | 2016 |<span id="projNum"></span></p>
+    </footer>
+    <script src="githubToken.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.1.js" charset="utf-8"></script>
+    <script src="scripts/app.js" charset="utf-8"></script>
+    <script src="scripts/pages.json" charset="utf-8"></script>
+    <script src="scripts/pageData.js" charset="utf-8"></script>
+
+
+    <script src="scripts/projectsController.js" charset="utf-8"></script>
+
+    <script src="scripts/repo.js"></script>
+    <script src="scripts/repoView.js"></script>
+    <script src="scripts/aboutController.js" charset="utf-8"></script>
+
+    <script src="scripts/routes.js" charset="utf-8"></script>
+
+  </body>
+</html>
