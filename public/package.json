@@ -1,0 +1,22 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "Andrew's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewpeterwatson/portfolio.git"
+  },
+  "author": "Andrew Watson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewpeterwatson/portfolio/issues"
+  },
+  "homepage": "https://github.com/andrewpeterwatson/portfolio#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
