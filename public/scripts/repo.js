@@ -23,5 +23,5 @@
      });
    };
 
-   module.repos = repos;
+ module.repos = repos;
 })(window);
