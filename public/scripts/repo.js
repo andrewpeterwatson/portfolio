@@ -5,8 +5,8 @@
 
    repos.requestRepos = function(callback) {
      $.ajax({
-       type: 'GET',
-       url:'https://api.github.com/user/repos',
+       type: 'POST',
+       url:'http://localhost:3000/api.github.com/user/repos',
        headers: { Authorization: 'token ' + gitToken },
        success: function(data, status, xhr){
          repos.all = data;
