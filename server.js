@@ -13,8 +13,9 @@ var proxyGitHub = function(request, response) {
 
 app.use(express.static(__dirname + "/public"));
 
-app.get('/', function(req, res) {
-  res.sendFile(__dirname + "/public/index.html");
+app.get('*', function(request, response) {
+  console.log('New request:', request.url);
+  response.sendFile('public/index.html', { root: '.' });
 });
 app.listen(port, function() {
   console.log('Server running on port: ' + port);
