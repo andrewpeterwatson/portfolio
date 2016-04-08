@@ -1,27 +1,25 @@
- (function(module) {
-   var repos = {};
+(function(module) {
+  var repos = {};
 
-   repos.all = [];
+  repos.all = [];
 
-   repos.requestRepos = function(callback) {
-     $.ajax({
-       type: 'GET',
-       url:'/github/user/repos',
-       success: function(data, status, xhr){
-         repos.all = data;
-         callback();
-       },
-       error: function(request, status, error){
-         console.log('error:' + error)
-       }
-   });
-   };
+  // TODO: Refactor this ajax call into a get request to the proxy end point provided by server.js.
 
-   repos.with = function(attr) {
-     return repos.all.filter(function(repo) {
-       return repo[attr];
-     });
-   };
+  repos.requestRepos = function(callback) {
+    $.ajax({
+      type: 'GET',
+        url: '/github/user/repos',
+      success: function(data, message, xhr) {
+        repos.all = data;
+      }
+    }).done(callback);
+  };
 
- module.repos = repos;
+  repos.with = function(attr) {
+    return repos.all.filter(function(repo) {
+      return repo[attr];
+    });
+  };
+
+  module.repos = repos;
 })(window);
