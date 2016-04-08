@@ -1,10 +1,15 @@
 {
-  "name": "public",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Andrew's Portfolio",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/andrewpeterwatson/portfolio/issues"
   },
-  "homepage": "https://github.com/andrewpeterwatson/portfolio#readme",
-  "dependencies": {
-    "express": "^4.13.4"
-  }
+  "homepage": "https://github.com/andrewpeterwatson/portfolio#readme"
 }
