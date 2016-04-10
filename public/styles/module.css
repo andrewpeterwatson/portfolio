@@ -28,3 +28,36 @@ display: block;
 position: relative;;
 width: 100%;
 }
+.projectsHead {
+  background-image: url(/media/images/pug3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50em;
+  margin: 0;
+  position: fixed;
+}
+.banner {
+  height: 37em;
+  width: 100%;
+  margin-top: 42em;
+}
+.bannerCover {
+  transition: background-color 2s ease;
+  height: 37em;
+  width: 100%;
+  box-shadow: inset 0 0 200px 50px #000000;
+  background-color: hsla(15, 100%, 0%, 0.69);
+  position: absolute;
+  margin-top: 42em;
+}
+.uxD {
+  font-size: 5em;
+  font-family: 'Advent Pro', sans-serif;
+  margin-left: 35%;
+  border-bottom: .02em solid black;
+}
+.bannerCover:hover {
+  transition: background-color 1.5s ease;
+  box-shadow: inset 0 0 300px #000000;
+  background-color: hsla(279, 100%, 0%, 0.3);
+}

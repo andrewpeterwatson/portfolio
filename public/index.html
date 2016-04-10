@@ -66,11 +66,11 @@
 
         <nav class="navEl">
           <ul class="navUl">
-            <li data-content="home" class="button offset-by-three navButtons home"><a class="home" href="/">Home</a></li>
-            <li class= "offset-by-three">|</li>
-            <li data-content="about" class="button offset-by-three navButtons about"><a class="about" href="/about">About</a></li>
-            <li class= "offset-by-three">|</li>
-            <li data-content="projects" class="button projects offset-by-three navButtons"><a class="projects" href="/projects">Projects</a></li>
+            <li data-content="home" class="button offset-by-three navButtons home navLi"><a class="home" href="/">Home</a></li>
+            <li class= "offset-by-three navLi">|</li>
+            <li data-content="about" class="button offset-by-three navButtons about navLi"><a class="about" href="/about">About</a></li>
+            <li class= "offset-by-three navLi">|</li>
+            <li data-content="projects" class="button projects offset-by-three navButtons navLi"><a class="projects" id="projButton" href="/projects">Projects</a></li>
           </ul>
         </nav>
     </header>
@@ -82,8 +82,9 @@
         <img id="homeImg" src="media/images/headShot.png" alt="WRONG!" />
       </section>
 
-      <section class="tab-content" id="projects">
-
+      <section class="tab-content projectsHead" id="projects">
+        <!-- <section class="projectsHead"></section> -->
+        <span class="uxD">UX Design</span>
     </section>
     <section class="aboutContent tab-content four columns offset-by-four" id="about">
       <h1>Sample Text</h1>
