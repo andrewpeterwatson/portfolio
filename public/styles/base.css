@@ -54,13 +54,13 @@ footer {
   margin-top: -1%;
 }
 #homeImg {
-  margin-top: 19%;
+  margin-top: 22%;
   position: fixed;
-  margin-left: 13%;
+  margin-left: 25%;
 }
 #staticText {
   position: absolute;
-  margin-top: 3%;
+  margin-top: 4.4%;
   margin-left: 35%;
   font-size: 2em;
   border-bottom: .08em solid black;
