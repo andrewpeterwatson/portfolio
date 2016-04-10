@@ -48,6 +48,7 @@ Project.names = function() {
       return a + b;
     },-1);
   };
+  
 
   Project.fillNum = function() {
     $('#projNum').html(" Currently featuring " + filteredNames.length + " projects!");
