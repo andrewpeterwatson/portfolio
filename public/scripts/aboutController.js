@@ -4,10 +4,10 @@
 
 
   aboutController.index = function() {
-    // $('.tab-content').hide();
-    // $('#about').fadeIn()
+    $('.tab-content').hide();
+    $('#about').fadeIn()
+    repos.requestRepos(repoView.index);
   };
-  repos.requestRepos(repoView.index);
 
   module.aboutController = aboutController;
 })(window);
