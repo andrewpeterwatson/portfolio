@@ -48,7 +48,7 @@ Project.names = function() {
       return a + b;
     },-1);
   };
-  
+
 
   Project.fillNum = function() {
     $('#projNum').html(" Currently featuring " + filteredNames.length + " projects!");
@@ -58,35 +58,35 @@ Project.names = function() {
 
 // $('span').html(facts[fact] + (facts[fact] - 1));
 // TODO: This is the cycle function
-// var fillImg = [
-// "/media/icons/aboutIcon.png"
-// ,"/media/icons/HamburgerIcon.png"
-// ,"/media/icons/lanternIcon.png"
-// ]
-// var fillText = [" not found"," is on fire"," 404"," is alive","=42"];
-// var usedText = [];
-// var counter = 0;
-// // $('.dynamicText').text(" is mine");
-//
-// function createLoop(time, renderLocate, fillData, dataArr) {
-//   setTimeout(function () {
-//       fillData.push(dataArr[counter])
-//       $(renderLocate).attr("src", fillData);
-//       console.log(fillData);
-//       counter++...
-//     if (counter < dataArr.length + 1) {
-//       fillData.pop();
-//       createLoop(time, renderLocate, fillData, dataArr);
-//       usedText = [];
-//     } else {
-//       counter = 0,
-//       $(renderLocate).attr("src", fillData);
-//       createLoop(time, renderLocate, fillData, dataArr);
-//       usedText = [];
-//     }
-//   },time)
-// }
-// createLoop(1000,'#imgTest', usedText, fillImg);
+var fillImg = [
+"/media/icons/aboutIcon.png"
+,"/media/icons/HamburgerIcon.png"
+,"/media/icons/lanternIcon.png"
+]
+var fillText = [" not found"," is on fire"," 404"," is alive","=42"];
+var usedText = [];
+var counter = 0;
+$('.dynamicText').text(" is mine");
+
+function createLoop(time, renderLocate, fillData, dataArr) {
+  setTimeout(function () {
+      fillData.push(dataArr[counter])
+      $(renderLocate).attr("src", fillData);
+      console.log(fillData);
+      counter++...
+    if (counter < dataArr.length + 1) {
+      fillData.pop();
+      createLoop(time, renderLocate, fillData, dataArr);
+      usedText = [];
+    } else {
+      counter = 0,
+      $(renderLocate).attr("src", fillData);
+      createLoop(time, renderLocate, fillData, dataArr);
+      usedText = [];
+    }
+  },time)
+}
+createLoop(1000,'#dynamicText', usedText, fillText);
 
 
 
