@@ -6,6 +6,9 @@
     $('#projects').fadeIn().siblings().hide();
   };
 
+
+
+
   projectsController.bodyHide = function() {
     $('.article-body').hide();
   }
@@ -17,12 +20,12 @@
     $('#projects').hide();
   });
 
-  projectsController.bodyToggle = function() {
-  $(".article-image").on("click", "a", function(){
-    var $sectionEl = $(this).parent();
-    $sectionEl.next().fadeToggle(500);
-  });
-  }
+  articlesController.loadById = function(ctx, next) {
+    console.log(ctx);
+    var articleData = function(article) {
+      ctx.articles = article;
+      next();
+    };
 
 
   module.projectsController = projectsController;
