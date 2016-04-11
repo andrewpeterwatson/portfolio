@@ -8,9 +8,7 @@
      var render = Handlebars.compile($("#repo-template").text());
    repoView.index = function() {
      ui();
-     $('#about ul').append(
-
-       repos.with('description').map(render)
+     $('#about ul').append(repos.with('description').map(render)
      );
    };
 

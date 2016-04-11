@@ -4,6 +4,7 @@
   background-image: url(../media/images/paperBlue.jpg);
   background-repeat: repeat;
   position: fixed;
+  z-index: 0
   }
 
 
@@ -28,9 +29,7 @@ nav ul li a {
 text-decoration: none;
 color: white;
 }
-nav ul ul {
-	display: none;
-}
+
 
 	nav ul li:hover > ul {
 		display: block;
@@ -60,10 +59,10 @@ footer {
 }
 #staticText {
   position: absolute;
-  margin-top: 4.4%;
+  margin-top: 5.5%;
   margin-left: 35%;
   font-size: 2em;
-  border-bottom: .08em solid black;
+  border-bottom: .07em solid black;
   width: 10em;
 }
 a {
