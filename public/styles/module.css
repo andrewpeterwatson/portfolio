@@ -28,9 +28,9 @@ display: block;
 position: relative;;
 width: 100%;
 }
-#about {
+/*#about {
   opacity: .9;
-}
+}*/
 .projectsHead {
   background-image: url(/media/images/pug3.jpeg);
   background-repeat: no-repeat;
