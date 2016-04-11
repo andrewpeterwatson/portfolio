@@ -48,6 +48,7 @@ Project.names = function() {
       return a + b;
     },-1);
   };
+  
 
   Project.fillNum = function() {
     $('#projNum').html(" Currently featuring " + filteredNames.length + " projects!");
@@ -62,17 +63,17 @@ Project.names = function() {
 // ,"/media/icons/HamburgerIcon.png"
 // ,"/media/icons/lanternIcon.png"
 // ]
-// var fillText = ["test1","nest","monkey","test4","cards"];
+// var fillText = [" not found"," is on fire"," 404"," is alive","=42"];
 // var usedText = [];
 // var counter = 0;
-// // $('.dynamicText').text("Time");
+// // $('.dynamicText').text(" is mine");
 //
 // function createLoop(time, renderLocate, fillData, dataArr) {
 //   setTimeout(function () {
 //       fillData.push(dataArr[counter])
 //       $(renderLocate).attr("src", fillData);
 //       console.log(fillData);
-//       counter++
+//       counter++...
 //     if (counter < dataArr.length + 1) {
 //       fillData.pop();
 //       createLoop(time, renderLocate, fillData, dataArr);
