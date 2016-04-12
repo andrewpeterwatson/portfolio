@@ -82,7 +82,7 @@ function createLoop(time, renderLocate, fillData, dataArr) {
     }
   },time)
 }
-createLoop(2000,'.dynamicText', usedText, fillText);
+createLoop(2500,'.dynamicText', usedText, fillText);
 
 
 
