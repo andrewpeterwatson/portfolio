@@ -20,12 +20,12 @@
     $('#projects').hide();
   });
 
-  articlesController.loadById = function(ctx, next) {
-    console.log(ctx);
-    var articleData = function(article) {
-      ctx.articles = article;
-      next();
-    };
+  projectsController.bodyToggle = function() {
+  $(".article-image").on("click", "a", function(){
+    var $sectionEl = $(this).parent();
+    $sectionEl.next().fadeToggle(500);
+  });
+  }
 
 
   module.projectsController = projectsController;
